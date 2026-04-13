@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "D:\python\1\AGNNCert\benchmark_adaptive_inference.py", line 502, in <module>
+    main()
+  File "D:\python\1\AGNNCert\benchmark_adaptive_inference.py", line 324, in main
+    classifier.load_model(checkpoint_path)
+  File "D:\python\1\AGNNCert\node_hash.py", line 399, in load_model
+    self.model.load_state_dict(checkpoint['model_state_dict'])
+  File "d:\python\1\AGNNCert\.conda-env\Lib\site-packages\torch\nn\modules\module.py", line 2215, in load_state_dict
+    raise RuntimeError('Error(s) in loading state_dict for {}:\n\t{}'.format(
+RuntimeError: Error(s) in loading state_dict for GraphGCN:
+	size mismatch for conv1.lin.weight: copying a param with shape torch.Size([32, 3]) from checkpoint, the shape in current model is torch.Size([32, 4]).
